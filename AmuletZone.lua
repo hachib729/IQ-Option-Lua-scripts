@@ -1,5 +1,5 @@
 instrument {
-    name = 'BinaryMT2',
+    name = 'Hachib Bot',
     icon = 'indicators:MA',
     overlay = true
 }
