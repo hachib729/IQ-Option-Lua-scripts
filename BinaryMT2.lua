@@ -1,5 +1,5 @@
 instrument {
-    name = 'BinaryMT2',
+    name = 'Amulet Accuracy ',
     icon = 'indicators:MA',
     overlay = true
 }
