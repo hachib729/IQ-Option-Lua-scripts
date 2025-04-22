@@ -1,4 +1,4 @@
-instrument { name = "BO indicator", overlay = true, icon = "indicators:BB" }
+instrument { name = "Hachib Binary Bot", overlay = true, icon = "indicators:BB" }
 
 period = input (20, "front.period", input.integer,  1)
 devs   = input (1, "front.newind.stddev", input.integer, 1)
@@ -76,7 +76,7 @@ cci = nom / denom
 pu= (cci>CCIupLevel) and (rsi>RSIupLevel ) and (bbr>BBupLevel) and (open[1] > short[1] and close[1]>short[1])
 pd= (cci<CCIdnLevel) and (rsi < RSIdnLevel) and (bbr < BBdnLevel) and (open[1]< short[1] and close[1]<short[1]) 
 
-plot_shape(pd, "short", shape_style.triangledown, shape_size.large, 'red', shape_location.abovebar,0,'SELL', 'red')
-plot_shape(pu, "long", shape_style.triangleup, shape_size.large, 'green', shape_location.belowbar,0,'BUY', 'green')
+plot_shape(pd, "short", shape_style.triangledown, shape_size.large, 'red', shape_location.abovebar,0,'90% SELL', 'red')
+plot_shape(pu, "long", shape_style.triangleup, shape_size.large, 'green', shape_location.belowbar,0,'90% BUY', 'green')
 
 print(pu)
